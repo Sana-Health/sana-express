@@ -1,0 +1,247 @@
+<!-- main body content -->
+<main class="overflow-hidden">
+  <!-- hero section -->
+  <section class="bg-hero">
+    <div class="overlay">
+      <%- include("../partials/header", {
+        data: { page: "home" }
+      }) %>
+      <div class="container text-center text-md-start">
+        <div class="d-flex flex-column flex-lg-row gap-5 justify-content-between py-5">
+          <div class="col-lg-7 my-auto py-5">
+            <div class="p-4 glass rounded-5">
+              <h1 class="mb-3 font-bold" style="font-size: 2.1rem;">
+                Wellness That Meets You <br> <span class="text-primary">Where You Are.</span>
+              </h1>
+              <div class="mb-3 opacity-75">
+                Discover personalized wellness support, natural healing, mindful sounds, and real professionals — all in one soothing space.
+              </div>
+              <a href="/join" class="btn btn-primary rounded-pill p-3 px-5 fw-bold text-uppercase">
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="margin-top: -50px;">
+    <div class="deep-glass">
+      <div class="py-4 position-relative">
+        <div class="d-flex flex-column gap-2 text-center text-md-start py-3">
+          <div class="splide clients" role="group">
+            <div class="splide__track">
+              <ul class="splide__list align-items-center text-center">
+
+                <li class="splide__slide"><img src="./images/client-logo1.png" alt="" loading="lazy" height="60" /></li>
+
+                <li class="splide__slide"><img src="./images/client-logo2.png" alt="" loading="lazy" height="60" /></li>
+
+                <li class="splide__slide"><img src="./images/client-logo3.png" alt="" loading="lazy" height="60" /></li>
+
+                <li class="splide__slide"><img src="./images/client-logo4.png" alt="" loading="lazy" height="60" /></li>
+
+              </ul>
+            </div>
+          </div>
+          <script>
+            new Splide('.splide.clients', {
+              type: 'loop',
+              drag: 'free',
+              focus: 'center',
+              perPage: 5,
+              autoScroll: {
+                speed: 1,
+              },
+              arrows: false,
+              pagination: false,
+              breakpoints: {
+                1200: {
+                  perPage: 3,
+                },
+                768: {
+                  perPage: 2,
+                }
+              }
+            }).mount(window.splide.Extensions);
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero section : end -->
+  <section class="py-5 position-relative">
+    <div class="overlay py-5">
+      <img class="decor-image" src="./images/bg-pattern1.png" alt="bg-decoration" style="left: 0; top: -400px;" height="1000">
+      <div class="container d-flex flex-column gap-2 text-center">
+        <div class="col-md-9 mx-auto d-flex flex-column gap-4 position-relative">
+          <img class="decor-image opacity-50" src="./images/bg-image1.png" alt="decoration" style="top: -100px; left: 38%;" height="200">
+          <h2 class="text-primary fw-bold">Balance your body. <br> Nurture your mind</h2>
+          <div class="opacity-50">
+            Sana is your companion for mental clarity, physical strength, and holistic living. Join the waitlist and be the first to step into wellness that listens.
+          </div>
+          <div>
+            <a href="/join" class="btn btn-primary rounded-pill p-3 px-5 fw-bold text-uppercase">
+              Join the Waitlist
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section content left -->
+  <section class="position-relative">
+    <div class="overlay py-5">
+      <div class="container text-center text-md-start">
+        <div class="d-flex flex-column flex-lg-row gap-5 justify-content-between align-items-center">
+          <div class="col d-flex flex-column gap-3">
+            <img class="decor-image opacity-50" src="./images/bg-image1.png" alt="decoration" style="top: -100px; left: 38%;" height="500">
+            <h3 class="fw-bold">What is Sana?</h3>
+            <div class="opacity-50">
+              Sana is the all-in-one platform for wellness professionals and clients - built to simplify practice management, deepen client care, and support every step of the healing journey
+            </div>
+          </div>
+          <div class="col d-flex flex-column gap-3">
+            <img src="./images/content-image4.png" alt="Section Image" class="img-fluid rounded-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 position-relative">
+    <div class="overlay py-5">
+      <img class="decor-image" src="./images/bg-pattern2.png" alt="bg-decoration" style="right: 0; top: -400px;" height="1300">
+      <div class="container d-flex flex-column gap-2 text-center">
+        <div class="col-md-9 mx-auto d-flex flex-column gap-4 position-relative">
+          <img class="decor-image opacity-50" src="./images/bg-image1.png" alt="decoration" style="bottom: -150px; left: -10%;" height="250">
+          <h2 class="text-primary fw-bold">What Sana Offers</h2>
+          <div class="opacity-50">
+            From herbal remedies and mindfulness tools to one-on-one support, Sana creates a space for you to grow, heal, and feel whole.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="position-relative">
+    <div class="overlay py-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row gap-5 justify-content-between align-items-center">
+          <div class="col d-flex flex-column gap-3">
+            <h3 class="fw-bold">For Professionals</h3>
+            <div class="opacity-50">
+              <ul>
+                <li>Smart scheduling, payment, and client records.</li>
+                <li>Secure notes, protocols, and health tracking.</li>
+                <li>Tools for faster workflows + better outcomes.</li>
+                <li>Sync bookings on your website with SANA.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex flex-column gap-3">
+            <img src="./images/content-image5.png" alt="Section Image" class="img-fluid rounded-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="position-relative">
+    <div class="overlay py-5">
+      <img class="decor-image" src="./images/bg-pattern3.png" alt="bg-decoration" style="left: 0; top: 0;" height="1300">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row gap-5 justify-content-between align-items-center">
+          <div class="col d-flex flex-column gap-3">
+            <img src="./images/content-image6.png" alt="Section Image" class="img-fluid rounded-4">
+          </div>
+          <div class="col d-flex flex-column gap-3">
+            <img class="decor-image opacity-50" src="./images/bg-image1.png" alt="decoration" style="top: -100px; left: 32%;" height="500">
+            <h3 class="fw-bold">For Clients</h3>
+            <div class="opacity-50">
+              <ul>
+                <li>Find and book the right professional instantly</li>
+                <li>Track your mood, symptoms and habits</li>
+                <li>Get personalized insights, journal prompts and self-care tools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="py-5"></div>
+  <section class="border-top border-bottom border-[#afafaf] position-relative">
+    <div class="overlay py-5">
+      <img class="decor-image" src="./images/tag-image1.png" alt="bg-decoration" style="left: 20%; top: -50px;" height="100">
+      <img class="decor-image" src="./images/tag-image2.png" alt="bg-decoration" style="right: 20%; top: -50px;" height="100">
+      <img class="decor-image" src="./images/tag-image3.png" alt="bg-decoration" style="left: 10%; bottom: -50px;" height="100">
+      <img class="decor-image" src="./images/tag-image4.png" alt="bg-decoration" style="right: 30%; bottom: -50px;" height="100">
+      <img class="decor-image" src="./images/bg-pattern4.png" alt="bg-decoration" style="right: 0; top: -400px;" height="1000">
+      <div class="d-flex flex-column gap-2 text-center text-md-start">
+        <div class="splide tags" role="group">
+          <div class="splide__track">
+            <ul class="splide__list align-items-center text-center fs-5 opacity-75">
+              <li class="splide__slide">
+                Mindfulness Reset
+              </li>
+              <li class="splide__slide">
+                Breathe and Let Go
+              </li>
+              <li class="splide__slide">
+                Sleep Deeply
+              </li>
+              <li class="splide__slide">
+                Sleep Deeply
+              </li>
+              <li class="splide__slide">
+                Good Energy
+              </li>
+            </ul>
+          </div>
+        </div>
+        <script>
+          new Splide('.splide.tags', {
+            type: 'loop',
+            drag: 'free',
+            focus: 'center',
+            perPage: 4,
+            gap: 20,
+            autoScroll: {
+              speed: 1,
+            },
+            arrows: false,
+            pagination: false,
+            breakpoints: {
+              1200: {
+                perPage: 3,
+              },
+              768: {
+                perPage: 2,
+              }
+            }
+          }).mount(window.splide.Extensions);
+        </script>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 position-relative">
+    <div class="overlay py-5">
+      <img class="decor-image" src="./images/bg-pattern5.png" alt="bg-decoration" style="left: 0; bottom: 10px;" height="500">
+      <div class="container d-flex flex-column gap-2 text-center">
+        <div class="bg-dark-grad shadow p-5 rounded-4 text-primary">
+          <div class="col-md-8 mx-auto mb-4">
+            Whether you’re a practitioner or a seeker, SANA helps you connect, grow, and thrive - with everything you need in one beautiful space.
+          </div>
+          <div>
+            <a href="/join" class="btn btn-primary rounded-pill p-3 px-5 fw-bold text-uppercase">
+              Join the Waitlist
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="py-5"></div>
+</main>
+<!-- footer section -->
+<%- include("../partials/footer", {
+    data: {}
+}) %>
